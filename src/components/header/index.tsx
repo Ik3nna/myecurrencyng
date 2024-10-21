@@ -11,7 +11,7 @@ interface navItemsProps {
     linkTo: string,
 }
 
-const Header = () => {
+const Header: React.FC = () => {
     const [active, setActive] = useState(false);
     const navigate = useNavigate();
 
