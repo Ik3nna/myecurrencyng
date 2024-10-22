@@ -1,0 +1,36 @@
+.card {
+    background-color: var(--cardHex);
+    border-radius: 8px;
+    padding: 20px;
+    height: 200px;
+    min-width: 300px;
+    color: var(--cardTextHex);
+    font-size: 16px;
+    line-height: 26px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(0.98);
+    -moz-transform: scale(0.98);
+}
+.name {
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+}
+.card img {
+    margin-right: 7px;
+}
+
+@media (max-width: 767px) {
+    .card {
+        min-width: 100%;
+        max-width: 100%;
+        width: 90%;
+    }
+}

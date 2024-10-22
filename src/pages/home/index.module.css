@@ -1,8 +1,14 @@
 .wrapper article:not(:nth-of-type(1)) {
     margin-top: 150px;
 }
+.wrapper hr {
+    border: 1px solid #21384218;
+    width: 85%;
+    margin: 40px auto 0px;
+}
 .hero_section {
     background-image: url("@/assets/hero_img.svg");
+    background-size: cover;
     min-height: 800px;
     width: 100%;
     margin-top: -100px;
@@ -53,7 +59,7 @@
 .slideTrack {
     display: flex;
     width: calc(140px * 20);
-    animation: scroll 50s linear infinite;
+    animation: scroll 40s linear infinite;
 }
 .slideTrack:hover {
     animation-play-state: paused;
@@ -100,6 +106,7 @@
     font-weight: 700;
     color: var(--blueHex);
     margin: 20px 0px 40px;
+    white-space: nowrap;
 }
 .customer_info h5 span {
     background-color: #FFD7231A;
@@ -146,7 +153,7 @@
 }
 .customer_card > div:last-child > div div:nth-of-type(1) {
     font-size: 22px;
-    line-height: 3px;
+    line-height: 30px;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -157,13 +164,439 @@
 }
 
 
+/* Swipers */
+.card_container, .reviews_container > div {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: auto;
+    margin-left: calc(15% / 2);
+    width: 100%;
+    padding-right: 120px;
+    padding-bottom: 15px;
+}
+
+
+
+/* shop_container */
+.shop_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    max-width: 100%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    position: relative;
+}
+.shop_container > div:nth-of-type(1) {
+    position: absolute;
+    left: -150px;
+}
+.sleepstiq_info {
+    position: absolute;
+    background-color: var(--whiteHex);
+    color: var(--cardTextHex);
+    bottom: 20px;
+    right: 0;
+    padding: 20px;
+    box-shadow: 50px 50px 100px 0px #00000025;
+    border-radius: 8px;
+}
+.shop_container > div:nth-of-type(2) {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    right: 0px;
+}
+.shop_container > div:nth-of-type(2) h5, .mission_container h5 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--blueHex);
+}
+.shop_container > div:nth-of-type(2) div:nth-of-type(1), 
+.mission_container > div:nth-of-type(1),
+.visit_shop div:nth-of-type(1) {
+    color: #21384299;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+/* Mission */
+.mission_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: calc(15% / 2);
+}
+.mission_container > div:nth-of-type(1) {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 35%;
+}
+
+
+/* visit_shop */
+.visit_shop {
+    max-width: 100%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.visit_shop h5 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 74px;
+    color: var(--blueHex);
+}
+.visit_shop div:nth-of-type(1) {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Reviews */
+.reviews_container h5 {
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--cardTextHex);
+    max-width: 100%;
+    width: 85%;
+    margin: 50px auto;
+}
+.reviews_container > div  {
+    column-gap: 40px;
+    margin-bottom: 100px;
+    padding-bottom: 3px;
+}
+
+
 @media (min-width: 1900px) {
     .container {
         width: 70%;
+    }
+    .slider {
+        width: 70%;
+    }
+    .card_container, .reviews_container > div {
+        margin-left: calc(30% / 2);
+        padding-right: 17%;
+    }
+    .shop_container {
+        width: 70% !important;
+    }
+    .mission_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: calc(30% / 2);
+    }
+    .reviews_container h5 {
+        width: 70%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1899px) {
+    .card_container, .reviews_container > div {
+        padding-right: 150px;
+    }
+    .shop_container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 85%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper article:not(:nth-of-type(1)) {
+        margin-top: 100px;
+    }
+    .hero_section {
+        background-position: center;
+    }
+    .card_container, .reviews_container > div {
+        padding-right: 95px;
+    }
+    .mission_container {
+        flex-direction: column-reverse;
+        margin-left: auto;
+        row-gap: 25px;
+    }
+    .mission_container h5 {
+        margin: auto;
+    }
+    .mission_container img {
+        width: 100%;
+    }
+    .mission_container > div:nth-of-type(1) {
+        max-width: 100%;
+        width: 85%;
+        margin: auto;
+        row-gap: 15px;
+    }
+    .visit_shop {
+        width: 85%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper article:not(:nth-of-type(1)) {
+        margin-top: 100px;
+    }
+    .container {
+        width: 90%;
+    }
+    .hero_section, .main_container {
+        min-height: 700px;
+    }
+    .hero_section {
+        background-position: center;
+    }
+    .container h3 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .container p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .customer_info h5 {
+        font-size: 36px;
+        line-height: 58px;   
+        margin: 20px 0px; 
+    }
+    .customer_card {
+        padding: 30px 20px;
+        max-width: 100%;
+        width: 100%;
+        row-gap: 50px;
+    }
+    .customer_info div:nth-of-type(2) {
+        width: 70%;
+    }
+    .customer_card div:nth-of-type(1) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .customer_card img {
+        max-width: 80px;
+        width: 100%;
+    }
+    .customer_card > div:last-child {
+        column-gap: 20px;
+    }
+    .customer_card > div:last-child > div div:nth-of-type(1) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .card_container, .reviews_container > div {
+        margin-left: calc(10% / 2);
+        padding-right: 50px;
+        padding-bottom: 10px;
+    }
+    .shop_container {
+        flex-direction: column;
+        row-gap: 45px;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 90%;
+        height: max-content;
+    }
+    .shop_container > div:nth-of-type(1) {
+        position: relative;
+        left: auto;
+    }
+    .shop_container > div:nth-of-type(2) {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        position: relative;
+    }
+    .mission_container {
+        flex-direction: column-reverse;
+        margin-left: auto;
+        row-gap: 25px;
+    }
+    .mission_container h5 {
+        margin: auto;
+    }
+    .mission_container img {
+        width: 100%;
+    }
+    .mission_container > div:nth-of-type(1) {
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+        row-gap: 15px;
+    }
+    .visit_shop {
+        width: 90%;
+    }
+    .reviews_container h5 {
+        width: 90%;
+        margin: 40px auto;
     }
 }
 @media (max-width: 767px) {
     .container {
         width: 90%;
+    }
+    .wrapper article:not(:nth-of-type(1)) {
+        margin-top: 50px;
+    }
+    .wrapper hr {
+        width: 90%;
+        margin: 30px auto 0px;
+    }
+    .hero_section {
+        height: 200px;
+        min-height: max-content;
+        background-position: center;
+    }
+    .main_container {
+        min-height: 500px;
+    }
+    .container {
+        padding-top: 150px;
+    }
+    .container p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container p:nth-of-type(2) {
+        width: 100%;
+    }
+    .container h3 {
+        font-size: 44px;
+        line-height: 48px;
+    }
+    .customers {
+        flex-direction: column;
+        row-gap: 25px;
+        padding-top: 40px;
+    }
+    .customer_info, .customer_info div:nth-of-type(2) {
+        width: 100%;
+    }
+    .customer_info h5 {
+        font-size: 28px;
+        line-height: 37px;   
+        margin: 20px 0px; 
+    }
+    .customer_card {
+        padding: 30px 20px;
+        max-width: 100%;
+        width: 100%;
+        row-gap: 30px;
+    }
+    .customer_card div:nth-of-type(1) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .customer_card img {
+        max-width: 80px;
+        width: 100%;
+    }
+    .customer_card > div:last-child {
+        column-gap: 20px;
+    }
+    .customer_card > div:last-child > div div:nth-of-type(1) {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .card_container, .reviews_container > div {
+        flex-direction: column;
+        row-gap: 15px;
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+        padding-right: 0px;
+        overflow-x: visible;
+    }
+    .shop_container {
+        flex-direction: column;
+        row-gap: 45px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 90%;
+        height: max-content;
+    }
+    .shop_container > div:nth-of-type(1) {
+        width: 130%;
+        position: relative;
+        left: auto;
+    }
+    .shop_container img {
+        width: 100%;
+    }
+    .shop_container > div:nth-of-type(2) {
+        width: 100%;
+        position: relative;
+    }
+    .sleepstiq_info {
+        right: auto;
+        left: 50%;
+        bottom: -20px;
+        padding: 10px;
+        transform: translateX(-50%);
+        width: 80%;
+        font-size: 14px;
+    }
+    .shop_container > div:nth-of-type(2) h5, .mission_container h5 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .mission_container {
+        flex-direction: column-reverse;
+        margin-left: auto;
+        row-gap: 25px;
+    }
+    .mission_container img {
+        width: 100%;
+    }
+    .mission_container > div:nth-of-type(1) {
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+        row-gap: 15px;
+    }
+    .visit_shop {
+        width: 90%;
+    }
+    .visit_shop h5 {
+        font-size: 28px;
+        line-height: 57px;
+    }
+    .reviews_container h5 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 90%;
+        margin: 40px auto;
+    }
+    .reviews_container > div  {
+        column-gap: 40px;
+        margin-bottom: 100px;
+        padding-bottom: 3px;
+    }
+}
+@media (max-width: 380px) {
+    .customer_info h5 {
+        white-space: wrap;
     }
 }
