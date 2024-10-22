@@ -1,10 +1,3 @@
-header {
-    background: var(--whiteHex);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
 .header {
     display: flex;
     align-items: center;
@@ -34,6 +27,15 @@ nav ul {
     font-weight: 700 !important;
 }
 
+/* fixed header */
+.fixedNav {
+    background: var(--whiteHex);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-bottom: 10px;
+}
 
 
 
@@ -47,10 +49,6 @@ nav ul {
         justify-content: space-between;
         width: 90%;
     }  
-    
-    
-    
-
     .header nav {
         position: fixed;
         z-index: 10;

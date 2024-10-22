@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./index.module.css"
 import { NavLink, useNavigate } from 'react-router-dom'
+import useSticky from '@/hooks/useStickyHook';
 
 // assets
 import logo from "@/assets/logo.svg"
@@ -13,6 +14,7 @@ interface navItemsProps {
 
 const Header: React.FC = () => {
     const [active, setActive] = useState(false);
+    const { sticky, stickyRef } = useSticky();
     const navigate = useNavigate();
 
     const navItems: navItemsProps[] = [
@@ -40,7 +42,8 @@ const Header: React.FC = () => {
     }
 
     return (
-        <header className={`${active ? styles.active : ""}`}>
+        <>
+        <header ref={stickyRef} className={`${active ? styles.active : ""} ${sticky && styles.fixedNav}`}>
             <div className={styles.header}>
                 <img src={logo} alt="logo-img" onClick={handleLogoClick} />
 
@@ -67,6 +70,11 @@ const Header: React.FC = () => {
                 </div>
             </div>
         </header>
+
+        <div style={{
+            height: sticky ? `${stickyRef.current?.clientHeight}px` : '0px',
+        }} />
+        </>
     )
 }
 

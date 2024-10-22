@@ -1,0 +1,16 @@
+.btn {
+    width: 225px;
+    border-radius: 5px;
+    background-color: var(--btnBgHex);
+    color: var(--whiteHex);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 19.07px;
+    letter-spacing: 1%;
+    font-family: var(--fontOpenSans);
+}
+.btn:hover {
+    transform: scale(0.98);
+}
