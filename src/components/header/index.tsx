@@ -29,7 +29,6 @@ const Header: React.FC = () => {
     };
 
     const handleLogoClick = ()=> {
-        navigate("/home")
         window.location.reload();
         window.scroll(0,0);
     }
