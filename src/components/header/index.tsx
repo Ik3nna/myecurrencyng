@@ -15,7 +15,6 @@ interface navItemsProps {
 const Header: React.FC = () => {
     const [active, setActive] = useState(false);
     const { sticky, stickyRef } = useSticky();
-    const navigate = useNavigate();
 
     const navItems: navItemsProps[] = [
         { id: 1, item: "Home", linkTo: "/home" },
