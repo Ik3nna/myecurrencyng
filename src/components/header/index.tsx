@@ -35,10 +35,10 @@ const Header: React.FC = () => {
     }
 
     const handleNavLinkClick = () => {
+        window.scroll(0, 0)
         if (active) {
-            setActive(false)
-            window.scroll(0, 0)
-        } else return
+            setActive(false)  
+        } 
     }
 
     return (

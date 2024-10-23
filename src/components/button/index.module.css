@@ -2,14 +2,14 @@
     width: 225px;
     border-radius: 5px;
     background-color: var(--btnBgHex);
-    color: var(--whiteHex);
+    color: var(--whiteHex) !important;
     text-align: center;
     padding: 10px;
     cursor: pointer;
-    font-size: 14px;
-    line-height: 19.07px;
+    font-size: 14px !important;
+    line-height: 19.07px !important;
     letter-spacing: 1%;
-    font-family: var(--fontOpenSans);
+    font-family: var(--fontOpenSans) !important;
 }
 .btn:hover {
     transform: scale(0.98);

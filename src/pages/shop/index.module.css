@@ -1,0 +1,246 @@
+.hero_section {
+    background-image: url("@/assets/shop_hero.png");
+    min-height: 620px;
+    background-size: cover;
+    width: 100%;
+    margin-top: -105px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 200px;
+    row-gap: 10px;
+}
+.container p {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--blueHex);
+}
+.container h3 {
+    font-size: 60px;
+    line-height: 74px;
+    font-weight: 700;
+    color: var(--blueHex);
+}
+.sleepstiq_container {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 85%;
+    margin: 100px auto 0px;
+}
+.sleepstiq_container img {
+    position: absolute;
+    left: -150px;
+}
+.product_deets {
+    position: absolute;
+    right: 0;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+.product_deets h5 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--blueHex);
+}
+.product_deets:not(.price_container) {
+    color: #21384299;
+    font-size: 16px;
+    line-height: 26px;
+}
+.product_deets > div:nth-of-type(2) {
+    color: var(--cardTextHex);
+}
+.price_container {
+    width: 40%;
+}
+.price_container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--blackHex);
+}
+.price_container > div:nth-of-type(2) {
+    font-weight: 600;
+    margin-top: 5px;
+}
+.price_container input {
+    width: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid var(--blueHex);
+}
+.main_container hr {
+    border: 1px solid #21384218;
+    width: 85%;
+    margin: 100px auto 50px;
+}
+.card_container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: auto;
+    margin-left: calc(15% / 2);
+    width: 100%;
+    padding-right: 120px;
+    padding-bottom: 15px;
+    margin-bottom: 60px;
+}
+
+
+
+@media (min-width: 1900px) {
+    .sleepstiq_container {
+        width: 70%;
+    }
+    .card_container {
+        margin-left: calc(30% / 2);
+        padding-right: 17%;
+    }
+    .main_container hr {
+        width: 70%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1899px) {
+    .card_container {
+        padding-right: 150px;
+    }
+    .price_container {
+        width: 35%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card_container {
+        padding-right: 95px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container h3 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .sleepstiq_container {
+        flex-direction: column;
+        row-gap: 45px;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 90%;
+        height: max-content;
+    }
+    .shop_container > div:nth-of-type(1) {
+        position: relative;
+        left: auto;
+    }
+    .shop_container > div:nth-of-type(2) {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        position: relative;
+    }
+    .sleepstiq_container img {
+        position: relative;
+        left: auto;
+        width: 100%;
+    }
+    .product_deets {
+        position: relative;
+        right: auto;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .product_deets > div:nth-of-type(2) {
+        text-align: left;
+        margin: auto;
+    }
+    .product_deets h5 {
+        font-size: 28px;
+        line-height: 38px;
+        margin: auto;
+    }
+    .price_container {
+        width: 25%;
+        margin: auto;
+    }
+    .card_container {
+        margin-left: calc(10% / 2);
+    }
+    .main_container hr {
+        margin: 70px auto 30px;
+    }
+}
+@media (max-width: 767px) {
+    .hero_section {
+        background-position: center;
+        min-height: 500px;
+    }
+    .container {
+        padding-top: 210px;
+    }
+    .container p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .container h3 {
+        font-size: 44px;
+        line-height: 48px;
+    }
+    .sleepstiq_container {
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: 90%;
+        height: max-content;
+    }
+    .sleepstiq_container img {
+        position: relative;
+        left: auto;
+        width: 100%;
+        margin-left: -70px;
+    }
+    .product_deets {
+        position: relative;
+        right: auto;
+        width: 100%;
+    }
+    .product_deets h5 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .product_deets > div:nth-of-type(2) {
+        text-align: left;
+        margin: auto;
+    }
+    .price_container {
+        width: 50%;
+    }
+    .main_container hr {
+        width: 90%;
+        margin: 40px auto;
+    }
+    .card_container, .reviews_container > div {
+        flex-direction: column;
+        row-gap: 15px;
+        max-width: 100%;
+        width: 90%;
+        margin: auto auto 40px;
+        padding-right: 0px;
+        overflow-x: visible;
+    }
+}
