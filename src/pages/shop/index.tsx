@@ -14,7 +14,7 @@ const Shop: React.FC = () => {
     return (
         <section className={styles.main_container}>
             <article className={styles.hero_section}>
-                <Container className="container">
+                <Container className="container1">
                     <p>We're here to help you</p>
                     <h3>Relax & Rest</h3>    
                 </Container>

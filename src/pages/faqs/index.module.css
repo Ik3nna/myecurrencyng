@@ -1,0 +1,217 @@
+.faq_container {
+    background-color: var(--faqBgHex);
+    min-height: 600px;
+    margin-top: -110px;
+}
+.faqs_hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 200px;
+    row-gap: 10px;
+}
+.faqs_hero p {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--blueHex);
+}
+.faqs_hero h3 {
+    font-size: 60px;
+    line-height: 74px;
+    color: var(--blueHex);
+    font-weight: 600;
+}
+.input_container {
+    position: relative;
+}
+.input_container svg {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input_container input {
+    border: none;
+    outline: none;
+    background-color: var(--whiteHex);
+    border-radius: 10px;
+    padding: 20px 20px 20px 80px;
+    min-width: 800px;
+    color: var(--blueHex);
+    font-size: 18px;
+    line-height: 27px;
+}
+.input_container input::placeholder {
+    color: var(--blueHex);
+    font-size: 18px;
+    line-height: 27px;
+}
+.subContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 90%;
+    margin: 50px auto 100px;
+}
+.subContainer > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--blueHex);
+}
+.subContainer > div:nth-of-type(1) div:nth-of-type(1) {
+    font-weight: 700;
+}
+.subContainer span {
+    background-color: #FFD7231A;
+    padding: 5px 40px 5px 5px;
+}
+.subContainer > div:nth-of-type(2) {
+    width: 70%;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.subContainer hr {
+    border: 1px solid #BDBDBD;
+}
+.question {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--blueHex);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.active_question {
+    font-weight: 600;
+}
+.answer {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--blackHex);
+    padding-bottom: 15px;
+}
+
+
+
+@media (min-width: 1900px) {
+    .subContainer {
+        width: 75%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .subContainer > div:nth-of-type(2) {
+        width: 70%;
+        margin-right: 60px;
+    }
+    .subContainer span {
+        padding: 5px 25px 5px 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .faqs_hero p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .faqs_hero h3 {
+        font-size: 52px;
+        line-height: 56px;
+    }
+    .input_container svg {
+        position: absolute;
+        left: 20px;
+    }
+    .input_container input {
+        padding: 20px 20px 20px 60px;
+        min-width: 650px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .input_container input::placeholder {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .subContainer {
+        width: 95%;
+    }
+    .subContainer span {
+        padding: 5px 20px 5px 5px;
+    }
+    .subContainer > div:nth-of-type(2) {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .faq_container {
+        min-height: 450px;
+    }
+    .faqs_hero {
+        padding-top: 150px;
+        row-gap: 15px;
+    }
+    .faqs_hero p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .faqs_hero h3 {
+        font-size: 44px;
+        line-height: 48px;
+    }
+    .input_container {
+        width: 100%;
+    }
+    .input_container svg {
+        position: absolute;
+        left: 20px;
+        height: 25px;
+        width: 25px;
+    }
+    .input_container input {
+        padding: 15px 15px 15px 55px;
+        min-width: max-content;
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .input_container input::placeholder {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .subContainer {
+        flex-direction: column;
+        row-gap: 30px;
+        column-gap: 10px;
+    }
+    .subContainer span {
+        padding: 5px;
+        white-space: wrap;
+    }
+    .subContainer > div:nth-of-type(1) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 15px;
+        font-size: 16px;
+        line-height: 26px;
+        width: 100%;
+    }
+    .subContainer > div:nth-of-type(2) {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+@media (max-width: 356px) {
+    .subContainer {
+        row-gap: 40px;
+    }
+    .subContainer > div:nth-of-type(1) > div:nth-of-type(1) {
+        position: relative;
+    }
+    .subContainer span {
+        position: absolute;
+        left: 0;
+        top: 25px;
+    }
+}

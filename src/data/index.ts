@@ -123,3 +123,81 @@ export const reviewsData = [
         name: "Nate Jacobs"
     }
 ]
+
+export const faqData = [
+    {
+        id: "Q1",
+        question: "How does it work?",
+        answer: `
+            Inhaling on the diffuser will turn the inside liquids (melatonin, lavender, chamomile) 
+            into a light mist which you inhale, and then exhale out your nose. Inhaling the melatonin allows 
+            for a near-instant effect, and also allows you to experience the soothing aromatherapeutic effect 
+            of lavender and chamomile.
+        `
+    },
+    {
+        id: "Q2",
+        question: "Why inhale melatonin?",
+        answer: `
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ipsum ac metus tempor aliquet. 
+            Cras porta leo sit amet dui rhoncus sollicitudin. Sed non justo turpis. Suspendisse lacinia orci 
+            nec leo vulputate dictum. Etiam tincidunt viverra faucibus. Morbi sollicitudin arcu id sapien 
+            luctus suscipit. Phasellus non condimentum massa.
+        `
+    },
+    {
+        id: "Q3",
+        question: "How much melatonin is there per inhale?",
+        answer: `
+            Donec vitae arcu pellentesque, condimentum quam ac, ullamcorper enim. Suspendisse pulvinar neque eu 
+            pretium mollis. Suspendisse ante lacus, rutrum et nibh et, dignissim tristique lacus. Sed blandit bibendum 
+            nisl a convallis. Proin non mauris viverra, convallis dui in, auctor urna. Nullam suscipit quis
+        `
+    },
+    {
+        id: "Q4",
+        question: "Is it an e-cigarette or tobacco product?",
+        answer: `
+            Eros sit amet suscipit. Phasellus vitae nisl interdum, consectetur neque vel, rutrum eros. Morbi ullamcorper 
+            euismod tempus. Curabitur sit amet efficitur arcu. Proin at bibendum ante. Nam laoreet et est in ornare. Nulla 
+            facilisi. Maecenas accumsan tincidunt arcu. Sed tellus libero, pulvinar venenatis tellus at
+        `
+    },
+    {
+        id: "Q5",
+        question: "What's in it?",
+        answer: `
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ipsum ac metus tempor aliquet. 
+            Cras porta leo sit amet dui rhoncus sollicitudin. Sed non justo turpis. Suspendisse lacinia orci 
+            nec leo vulputate dictum. Etiam tincidunt viverra faucibus. Morbi sollicitudin arcu id sapien 
+            luctus suscipit. Phasellus non condimentum massa.
+        `
+    },
+    {
+        id: "Q6",
+        question: "What's not in it?",
+        answer: `
+            Donec vitae arcu pellentesque, condimentum quam ac, ullamcorper enim. Suspendisse pulvinar neque eu 
+            pretium mollis. Suspendisse ante lacus, rutrum et nibh et, dignissim tristique lacus. Sed blandit bibendum 
+            nisl a convallis. Proin non mauris viverra, convallis dui in, auctor urna. Nullam suscipit quis
+        `
+    },
+    {
+        id: "Q7",
+        question: "How long does it last?",
+        answer: `
+            Eros sit amet suscipit. Phasellus vitae nisl interdum, consectetur neque vel, rutrum eros. Morbi ullamcorper 
+            euismod tempus. Curabitur sit amet efficitur arcu. Proin at bibendum ante. Nam laoreet et est in ornare. Nulla 
+            facilisi. Maecenas accumsan tincidunt arcu. Sed tellus libero, pulvinar venenatis tellus at
+        `
+    },
+    {
+        id: "Q8",
+        question: "How do I know it has run out/died?",
+        answer: `
+            Donec vitae arcu pellentesque, condimentum quam ac, ullamcorper enim. Suspendisse pulvinar neque eu 
+            pretium mollis. Suspendisse ante lacus, rutrum et nibh et, dignissim tristique lacus. Sed blandit bibendum 
+            nisl a convallis. Proin non mauris viverra, convallis dui in, auctor urna. Nullam suscipit quis
+        `
+    }
+]

@@ -5,19 +5,19 @@
     width: 100%;
     margin-top: -105px;
 }
-.container {
+.container1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 200px;
     row-gap: 10px;
 }
-.container p {
+.container1 p {
     font-size: 18px;
     line-height: 27px;
     color: var(--blueHex);
 }
-.container h3 {
+.container1 h3 {
     font-size: 60px;
     line-height: 74px;
     font-weight: 700;
@@ -126,7 +126,7 @@
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .container h3 {
+    .container1 h3 {
         font-size: 52px;
         line-height: 56px;
     }
@@ -163,7 +163,7 @@
         align-items: center;
     }
     .product_deets > div:nth-of-type(2) {
-        text-align: left;
+        text-align: center;
         margin: auto;
     }
     .product_deets h5 {
@@ -172,7 +172,7 @@
         margin: auto;
     }
     .price_container {
-        width: 25%;
+        width: 225px;
         margin: auto;
     }
     .card_container {
@@ -187,14 +187,14 @@
         background-position: center;
         min-height: 500px;
     }
-    .container {
-        padding-top: 210px;
+    .container1 {
+        padding-top: 220px;
     }
-    .container p {
+    .container1 p {
         font-size: 16px;
         line-height: 26px;
     }
-    .container h3 {
+    .container1 h3 {
         font-size: 44px;
         line-height: 48px;
     }
@@ -211,7 +211,7 @@
     .sleepstiq_container img {
         position: relative;
         left: auto;
-        width: 100%;
+        width: 130%;
         margin-left: -70px;
     }
     .product_deets {
@@ -225,10 +225,9 @@
     }
     .product_deets > div:nth-of-type(2) {
         text-align: left;
-        margin: auto;
     }
     .price_container {
-        width: 50%;
+        width: 225px;
     }
     .main_container hr {
         width: 90%;
